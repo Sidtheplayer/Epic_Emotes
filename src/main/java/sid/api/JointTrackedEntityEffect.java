@@ -28,7 +28,7 @@ public class JointTrackedEntityEffect extends EntityEffectExecutor {
     private final Joint joint;
     private final Vec3f translation;
     private final boolean updateRotation;
-
+    
     // Using caches to optimise — allocating new matrices/patches every frame = my pc tweaking
 
     // Position lerp
@@ -52,6 +52,7 @@ public class JointTrackedEntityEffect extends EntityEffectExecutor {
     private boolean rotationFailed = false;
 
     private long lastUpdateTick = -1L;
+
 
     /**
      * @param fx             photon fx — FXHelper.getFX(ResourceLocation.parse("photon:trail"))

@@ -9,7 +9,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent
 import net.neoforged.fml.event.lifecycle.FMLDedicatedServerSetupEvent
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import sid.emotez.epic_emotes.block.ModBlocks
+
 import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 import thedarkcolour.kotlinforforge.neoforge.forge.runForDist
 
@@ -30,8 +30,6 @@ object EpicEmotez {
     init {
         LOGGER.info( "Hello world!")
 
-        // Register the KDeferredRegister to the mod-specific event bus
-        ModBlocks.REGISTRY.register(MOD_BUS)
 
         val obj = runForDist(
             clientTarget = {
